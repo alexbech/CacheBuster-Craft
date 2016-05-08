@@ -1,6 +1,6 @@
 # CacheBuster plugin for Craft CMS
 
-Allow users/editors without access to settings to clear template-caches
+Allow users/groups without access to settings to clear template-caches
 
 ## Installation
 
@@ -11,17 +11,17 @@ To install CacheBuster, follow these steps:
 
 CacheBuster works on Craft 2.5.x.
 
-## CacheBuster Overview
+## Overview
 
 Cache Buster adds an icon in the control panel sidebar.
 Click the icon, and then click the `clear template cache` button.
 Done! All your template caches are cleared.
 
-## CacheBuster Configuration
+## Configuration
 
-Make sure you grant access to the plugin to users/groups you want to be able to clear them caches.
+Grant access to the plugin to users/groups you want to be able to clear them template caches.
 
-## CacheBuster Changelog
+## Changelog
 
 ### 1.0.0 -- 2016.04.19
 

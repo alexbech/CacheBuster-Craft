@@ -1,0 +1,12 @@
+{% extends "_layouts/cp" %}
+{% set centered = true %}
+{% set title = "Cache Buster" | t %}
+
+{% set content %}
+  <form method="post" accept-charset="UTF-8">
+    <input type="hidden" name="action" value="cacheBuster/clear">
+    <div class="buttons">
+      <input type="submit" class="btn submit" value="{{ "Clear template cache"  | t }}">
+    </div>
+  </form>
+{% endset %}

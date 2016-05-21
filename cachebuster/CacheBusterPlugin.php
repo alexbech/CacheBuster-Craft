@@ -16,16 +16,6 @@ namespace Craft;
 class CacheBusterPlugin extends BasePlugin
 {
     /**
-     * Called after the plugin class is instantiated; do any one-time initialization here such as hooks and events:
-     *
-     * craft()->on('entries.saveEntry', function(Event $event) {
-     *    // ...
-     * });
-     *
-     * or loading any third party Composer packages via:
-     *
-     * require_once __DIR__ . '/vendor/autoload.php';
-     *
      * @return mixed
      */
     public function init()
@@ -39,7 +29,7 @@ class CacheBusterPlugin extends BasePlugin
      */
     public function getName()
     {
-         return Craft::t('Cache Buster');
+         return Craft::t('CacheBuster');
     }
 
     /**
@@ -94,6 +84,22 @@ class CacheBusterPlugin extends BasePlugin
     public function getDeveloperUrl()
     {
         return 'http://vaersaagod.no';
+    }
+
+    /**
+     * @return string
+     */
+    public function getDocumentationUrl()
+    {
+        return 'https://github.com/alexbech/CacheBuster-Craft/blob/master/README.md';
+    }
+
+    /**
+     * @return string
+     */
+    public function getReleaseFeedUrl()
+    {
+        return 'https://raw.githubusercontent.com/alexbech/CacheBuster-Craft/master/releases.json';
     }
 
     /**
